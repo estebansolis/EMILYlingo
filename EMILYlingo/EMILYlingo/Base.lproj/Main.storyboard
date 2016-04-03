@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EMILYlingo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -16,12 +17,42 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvv-DV-z7t">
+                                <rect key="frame" x="126" y="484" width="67" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="Ghm-Ry-NzA"/>
+                                </constraints>
+                                <state key="normal" image="RecordOff.png"/>
+                                <connections>
+                                    <action selector="RecordAndStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U9t-vM-hdG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxC-l4-wh1">
+                                <rect key="frame" x="149" y="455" width="21" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="oxC-l4-wh1" firstAttribute="centerX" secondItem="Nvv-DV-z7t" secondAttribute="centerX" id="ArR-DB-Bor"/>
+                            <constraint firstAttribute="bottom" secondItem="Nvv-DV-z7t" secondAttribute="bottom" constant="20" symbolic="YES" id="OzZ-jn-5Gr"/>
+                            <constraint firstItem="Nvv-DV-z7t" firstAttribute="top" secondItem="oxC-l4-wh1" secondAttribute="bottom" constant="8" symbolic="YES" id="k65-bt-tnQ"/>
+                            <constraint firstItem="Nvv-DV-z7t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="szj-uz-bmw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="RecordButton" destination="Nvv-DV-z7t" id="sMC-qh-bIn"/>
+                        <outlet property="TimerLabel" destination="oxC-l4-wh1" id="CD7-gq-9NF"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="173.33333333333334" y="378.19333333333333"/>
+            <point key="canvasLocation" x="355" y="342"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="RecordOff.png" width="64" height="64"/>
+    </resources>
 </document>

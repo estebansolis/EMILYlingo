@@ -16,6 +16,8 @@
 		5FBB23861CADD3DC00F59715 /* EMILYlingoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBB23851CADD3DC00F59715 /* EMILYlingoTests.swift */; };
 		5FBB23911CADD3DC00F59715 /* EMILYlingoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBB23901CADD3DC00F59715 /* EMILYlingoUITests.swift */; };
 		E28E0CC362F93145A2520792 /* libPods-EMILYlingo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45E9DDA9D2FF95D5EE92957 /* libPods-EMILYlingo.a */; };
+		E6C2A2C31CB0934900E3C142 /* RecordingOn.png in Resources */ = {isa = PBXBuildFile; fileRef = E6C2A2C11CB0934900E3C142 /* RecordingOn.png */; };
+		E6C2A2C41CB0934900E3C142 /* RecordOff.png in Resources */ = {isa = PBXBuildFile; fileRef = E6C2A2C21CB0934900E3C142 /* RecordOff.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		5FBB9A6A1CADDCA200673D84 /* EMILYlingo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMILYlingo-Bridging-Header.h"; sourceTree = "<group>"; };
 		AB3020E61C59B24E2A80E79E /* Pods-EMILYlingo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMILYlingo.release.xcconfig"; path = "Pods/Target Support Files/Pods-EMILYlingo/Pods-EMILYlingo.release.xcconfig"; sourceTree = "<group>"; };
 		C45E9DDA9D2FF95D5EE92957 /* libPods-EMILYlingo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EMILYlingo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6C2A2C11CB0934900E3C142 /* RecordingOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingOn.png; sourceTree = "<group>"; };
+		E6C2A2C21CB0934900E3C142 /* RecordOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordOff.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 		5FBB23611CADD3DB00F59715 = {
 			isa = PBXGroup;
 			children = (
+				E6C2A2C01CB0933E00E3C142 /* Assets */,
 				5FBB236C1CADD3DB00F59715 /* EMILYlingo */,
 				5FBB23841CADD3DC00F59715 /* EMILYlingoTests */,
 				5FBB238F1CADD3DC00F59715 /* EMILYlingoUITests */,
@@ -115,6 +120,8 @@
 				5FBB237C1CADD3DC00F59715 /* Info.plist */,
 				5FBB23741CADD3DB00F59715 /* EMILYlingo.xcdatamodeld */,
 				5FBB9A6A1CADDCA200673D84 /* EMILYlingo-Bridging-Header.h */,
+				E6C2A2C11CB0934900E3C142 /* RecordingOn.png */,
+				E6C2A2C21CB0934900E3C142 /* RecordOff.png */,
 			);
 			path = EMILYlingo;
 			sourceTree = "<group>";
@@ -152,6 +159,14 @@
 				AB3020E61C59B24E2A80E79E /* Pods-EMILYlingo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E6C2A2C01CB0933E00E3C142 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Assets;
+			path = EMILYlingo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +279,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6C2A2C41CB0934900E3C142 /* RecordOff.png in Resources */,
+				E6C2A2C31CB0934900E3C142 /* RecordingOn.png in Resources */,
 				5FBB237B1CADD3DC00F59715 /* LaunchScreen.storyboard in Resources */,
 				5FBB23781CADD3DB00F59715 /* Assets.xcassets in Resources */,
 				5FBB23731CADD3DB00F59715 /* Main.storyboard in Resources */,

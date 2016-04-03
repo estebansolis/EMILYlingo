@@ -17,10 +17,9 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, EZMicrophoneDel
     
     @IBOutlet weak var plot: EZAudioPlotGL?;
     var microphone: EZMicrophone!;
-    
-    
     @IBOutlet weak var RecordButton: UIButton!
     @IBOutlet weak var TimerLabel: UILabel!
+    
     
     var audioURL: NSURL!
     var recordingSession: AVAudioSession!
@@ -79,7 +78,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, EZMicrophoneDel
                 plot?.shouldFill = true
                 plot?.shouldMirror = true
                 //plot?.resumeDrawing()
-                TimerControl = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "countdown", userInfo: nil, repeats: true)
+                TimerControl = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(ViewController.countdown), userInfo: nil, repeats: true)
                 count = 2
                 RecordButton.setImage(image, forState: .Normal)
                 startRecording()
@@ -108,7 +107,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, EZMicrophoneDel
             let sound = try AVAudioPlayer(contentsOfURL: audioURL)
             audioPlayer = sound
             sound.play()
-            RecordButton.enabled = false
+            //RecordButton.enabled = false
             //plot?.resumeDrawing()
         }catch{
             
@@ -158,7 +157,8 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, EZMicrophoneDel
     
     func countdown(){
         if(timer >= 0){
-            TimerLabel.text = String(timer--)
+            timer = timer - 1
+            TimerLabel.text = String(timer)
         }
     }
     
