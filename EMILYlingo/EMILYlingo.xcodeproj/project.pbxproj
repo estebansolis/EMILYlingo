@@ -15,9 +15,17 @@
 		5FBB237B1CADD3DC00F59715 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FBB23791CADD3DC00F59715 /* LaunchScreen.storyboard */; };
 		5FBB23861CADD3DC00F59715 /* EMILYlingoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBB23851CADD3DC00F59715 /* EMILYlingoTests.swift */; };
 		5FBB23911CADD3DC00F59715 /* EMILYlingoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBB23901CADD3DC00F59715 /* EMILYlingoUITests.swift */; };
-		E28E0CC362F93145A2520792 /* libPods-EMILYlingo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45E9DDA9D2FF95D5EE92957 /* libPods-EMILYlingo.a */; };
+		84D451F379E42D2BF16DD0D3 /* Pods_EMILYlingo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6553806600CB7C38D9D9F3BF /* Pods_EMILYlingo.framework */; };
 		E6C2A2C31CB0934900E3C142 /* RecordingOn.png in Resources */ = {isa = PBXBuildFile; fileRef = E6C2A2C11CB0934900E3C142 /* RecordingOn.png */; };
 		E6C2A2C41CB0934900E3C142 /* RecordOff.png in Resources */ = {isa = PBXBuildFile; fileRef = E6C2A2C21CB0934900E3C142 /* RecordOff.png */; };
+		EE1963D61CB30B44009F6FB8 /* Phrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1963D51CB30B44009F6FB8 /* Phrase.swift */; };
+		EE1963D71CB30B44009F6FB8 /* Phrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1963D51CB30B44009F6FB8 /* Phrase.swift */; };
+		EE1963D81CB30B44009F6FB8 /* Phrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1963D51CB30B44009F6FB8 /* Phrase.swift */; };
+		EE1963DA1CB30CFB009F6FB8 /* PhraseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1963D91CB30CFB009F6FB8 /* PhraseTableViewCell.swift */; };
+		EE1963DD1CB30F42009F6FB8 /* female.png in Resources */ = {isa = PBXBuildFile; fileRef = EE1963DB1CB30F42009F6FB8 /* female.png */; };
+		EE1963DE1CB30F42009F6FB8 /* male.png in Resources */ = {isa = PBXBuildFile; fileRef = EE1963DC1CB30F42009F6FB8 /* male.png */; };
+		EE1963E01CB31B19009F6FB8 /* PhraseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1963DF1CB31B19009F6FB8 /* PhraseTableViewController.swift */; };
+		EE1963E21CB31C41009F6FB8 /* usflag.png in Resources */ = {isa = PBXBuildFile; fileRef = EE1963E11CB31C41009F6FB8 /* usflag.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,10 +62,16 @@
 		5FBB23901CADD3DC00F59715 /* EMILYlingoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMILYlingoUITests.swift; sourceTree = "<group>"; };
 		5FBB23921CADD3DC00F59715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FBB9A6A1CADDCA200673D84 /* EMILYlingo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMILYlingo-Bridging-Header.h"; sourceTree = "<group>"; };
+		6553806600CB7C38D9D9F3BF /* Pods_EMILYlingo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EMILYlingo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3020E61C59B24E2A80E79E /* Pods-EMILYlingo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMILYlingo.release.xcconfig"; path = "Pods/Target Support Files/Pods-EMILYlingo/Pods-EMILYlingo.release.xcconfig"; sourceTree = "<group>"; };
-		C45E9DDA9D2FF95D5EE92957 /* libPods-EMILYlingo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EMILYlingo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C2A2C11CB0934900E3C142 /* RecordingOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingOn.png; sourceTree = "<group>"; };
 		E6C2A2C21CB0934900E3C142 /* RecordOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordOff.png; sourceTree = "<group>"; };
+		EE1963D51CB30B44009F6FB8 /* Phrase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phrase.swift; sourceTree = "<group>"; };
+		EE1963D91CB30CFB009F6FB8 /* PhraseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhraseTableViewCell.swift; sourceTree = "<group>"; };
+		EE1963DB1CB30F42009F6FB8 /* female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = female.png; sourceTree = "<group>"; };
+		EE1963DC1CB30F42009F6FB8 /* male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = male.png; sourceTree = "<group>"; };
+		EE1963DF1CB31B19009F6FB8 /* PhraseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhraseTableViewController.swift; sourceTree = "<group>"; };
+		EE1963E11CB31C41009F6FB8 /* usflag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usflag.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E28E0CC362F93145A2520792 /* libPods-EMILYlingo.a in Frameworks */,
+				84D451F379E42D2BF16DD0D3 /* Pods_EMILYlingo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,10 +126,16 @@
 		5FBB236C1CADD3DB00F59715 /* EMILYlingo */ = {
 			isa = PBXGroup;
 			children = (
+				EE1963D51CB30B44009F6FB8 /* Phrase.swift */,
+				EE1963D91CB30CFB009F6FB8 /* PhraseTableViewCell.swift */,
+				EE1963DF1CB31B19009F6FB8 /* PhraseTableViewController.swift */,
 				5FBB236D1CADD3DB00F59715 /* AppDelegate.swift */,
 				5FBB236F1CADD3DB00F59715 /* ViewController.swift */,
 				5FBB23711CADD3DB00F59715 /* Main.storyboard */,
 				5FBB23771CADD3DB00F59715 /* Assets.xcassets */,
+				EE1963E11CB31C41009F6FB8 /* usflag.png */,
+				EE1963DB1CB30F42009F6FB8 /* female.png */,
+				EE1963DC1CB30F42009F6FB8 /* male.png */,
 				5FBB23791CADD3DC00F59715 /* LaunchScreen.storyboard */,
 				5FBB237C1CADD3DC00F59715 /* Info.plist */,
 				5FBB23741CADD3DB00F59715 /* EMILYlingo.xcdatamodeld */,
@@ -147,7 +167,7 @@
 		860A7D5A2E85D663E18F5841 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C45E9DDA9D2FF95D5EE92957 /* libPods-EMILYlingo.a */,
+				6553806600CB7C38D9D9F3BF /* Pods_EMILYlingo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -283,7 +303,10 @@
 				E6C2A2C31CB0934900E3C142 /* RecordingOn.png in Resources */,
 				5FBB237B1CADD3DC00F59715 /* LaunchScreen.storyboard in Resources */,
 				5FBB23781CADD3DB00F59715 /* Assets.xcassets in Resources */,
+				EE1963DE1CB30F42009F6FB8 /* male.png in Resources */,
 				5FBB23731CADD3DB00F59715 /* Main.storyboard in Resources */,
+				EE1963DD1CB30F42009F6FB8 /* female.png in Resources */,
+				EE1963E21CB31C41009F6FB8 /* usflag.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +381,9 @@
 			files = (
 				5FBB23761CADD3DB00F59715 /* EMILYlingo.xcdatamodeld in Sources */,
 				5FBB23701CADD3DB00F59715 /* ViewController.swift in Sources */,
+				EE1963D61CB30B44009F6FB8 /* Phrase.swift in Sources */,
+				EE1963DA1CB30CFB009F6FB8 /* PhraseTableViewCell.swift in Sources */,
+				EE1963E01CB31B19009F6FB8 /* PhraseTableViewController.swift in Sources */,
 				5FBB236E1CADD3DB00F59715 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE1963D71CB30B44009F6FB8 /* Phrase.swift in Sources */,
 				5FBB23861CADD3DC00F59715 /* EMILYlingoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE1963D81CB30B44009F6FB8 /* Phrase.swift in Sources */,
 				5FBB23911CADD3DC00F59715 /* EMILYlingoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

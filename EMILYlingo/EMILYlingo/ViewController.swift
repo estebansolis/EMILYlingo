@@ -7,14 +7,13 @@
 //
 
 import UIKit
-
+import RealmSwift
 
 class ViewController: UIViewController, AVAudioRecorderDelegate, EZMicrophoneDelegate {
     
     //------------------------------------------------------------------------------
     // MARK: Properties
     //------------------------------------------------------------------------------
-    
     @IBOutlet weak var plot: EZAudioPlotGL?;
     var microphone: EZMicrophone!;
     @IBOutlet weak var RecordButton: UIButton!
@@ -78,7 +77,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, EZMicrophoneDel
                 plot?.shouldFill = true
                 plot?.shouldMirror = true
                 //plot?.resumeDrawing()
-                TimerControl = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(ViewController.countdown), userInfo: nil, repeats: true)
+                TimerControl = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "countdown", userInfo: nil, repeats: true)
                 count = 2
                 RecordButton.setImage(image, forState: .Normal)
                 startRecording()
@@ -96,26 +95,6 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, EZMicrophoneDel
                 }
             }
         }
-    }
-    
-    func finishRecording(){
-        audioRecorder.stop()
-        audioRecorder = nil
-        check = false
-        
-        do {
-            let sound = try AVAudioPlayer(contentsOfURL: audioURL)
-            audioPlayer = sound
-            sound.play()
-            //RecordButton.enabled = false
-            //plot?.resumeDrawing()
-        }catch{
-            
-        }
-        plot?.shouldMirror = false
-        plot?.shouldFill = false
-        plot?.clear()
-        
     }
     
     func startRecording(){
@@ -145,6 +124,26 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, EZMicrophoneDel
         }
     }
     
+    func finishRecording(){
+        audioRecorder.stop()
+        audioRecorder = nil
+        check = false
+        
+        do {
+            let sound = try AVAudioPlayer(contentsOfURL: audioURL)
+            audioPlayer = sound
+            sound.play()
+            //RecordButton.enabled = false
+            //plot?.resumeDrawing()
+        }catch{
+            
+        }
+        plot?.shouldMirror = false
+        plot?.shouldFill = false
+        plot?.clear()
+        
+    }
+
     @IBAction func RecordAndStop(sender: AnyObject) {
         loadRecordingUI()
     }
@@ -162,6 +161,9 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, EZMicrophoneDel
         }
     }
     
+    func savePhrase(){
+        
+    }
     
     //------------------------------------------------------------------------------
     // MARK: Actions
